@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+[project]
+name = "samflow"
+version = "0.1.0"
+description = "SAM-2 + optical flow for zero-shot temporally consistent video segmentation"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+authors = [{ name = "Sherif Abd El-Rady", email = "sherifabdelrady@gmail.com" }]
+keywords = ["sam2","video-segmentation","optical-flow","zero-shot","pytorch","davis"]
+dependencies = ["torch>=2.0","torchvision","opencv-python","numpy","pillow","tqdm"]
+[project.urls]
+Homepage = "https://sherifabdelrady.github.io/cv-portfolio/"
+Repository = "https://github.com/sherifabdelrady/samflow"
+[tool.ruff]
+line-length = 120
